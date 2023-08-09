@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>MerPdf - PDF Merger</title>
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+      background-image: url('path/to/your/background-image.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .navbar {
+      background-color: #2979ff;
+    }
+
+    .jumbotron {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .jumbotron h1 {
+      color: #2979ff;
+    }
+
+    .jumbotron p {
+      color: #616161;
+    }
+
+    .form-group label {
+      color: #2979ff;
+    }
+
+    .form-control-file {
+      border-color: #2979ff;
+    }
+
+    .btn-primary {
+      background-color: #2979ff;
+      border-color: #2979ff;
+    }
+
+    .btn-primary:hover {
+      background-color: #1854a4;
+      border-color: #1854a4;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">MerPdf</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- ... (rest of the navigation code) ... -->
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="jumbotron">
+      <h1 class="display-4">MerPdf - PDF Merger</h1>
+      <p class="lead">Combine multiple PDF files into one document with ease.</p>
+      <form method="post" action="/merge" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="pdfs">Select PDF files</label>
+          <input type="file" name="pdfs" class="form-control-file" id="pdfs" multiple accept=".pdf">
+        </div>
+        <button type="submit" class="btn btn-primary">Merge PDFs</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- ... (remaining JavaScript code) ... -->
+</body>
+</html>
